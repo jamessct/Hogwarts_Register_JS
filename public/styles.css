@@ -1,0 +1,9 @@
+body {
+  background-image: url("http://hendricksarchitect.com/wp-content/uploads/2015/07/Hogwarts-Castle-Alnwick.jpg");
+  background-size: cover;
+}
+
+h1 {
+  font-family: arial;
+  color: green;
+}
