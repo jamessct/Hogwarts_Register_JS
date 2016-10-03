@@ -14,8 +14,9 @@ var returnAllCharacters = function() {
 }
 
 var charactersByHouse = function(houses) {
+  clearList();
   var character = characters[0];
-  console.log(character.name)
+  console.log(character.name);
   characters.forEach(function(character) {
     if(houses === character.house) {
       // pTag.innerText = "Name: " + character.name + "\n";
@@ -24,6 +25,11 @@ var charactersByHouse = function(houses) {
     }
     else return null;
   })
+}
+
+var clearList = function(){
+  var ul = document.querySelector("#names");
+  ul.innerHTML = "";
 }
 
 var createListItem = function(name) {
@@ -38,6 +44,6 @@ var appendElements = function(listItem, ul) {
 
 var addListItem = function(name) {
   var listItem = createListItem(name);
-  var ul = document.querySelector('#names')
+  var ul = document.querySelector('#names');
   appendElements(listItem, ul);
 }
