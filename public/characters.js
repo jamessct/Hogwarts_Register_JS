@@ -17,10 +17,12 @@ var charactersByHouse = function(houses) {
   var character = characters[0];
   console.log(character.name)
   characters.forEach(function(character) {
-    if(houses === character.house)
+    if(houses === character.house) {
       // pTag.innerText = "Name: " + character.name + "\n";
       var name = character.name;
-      addListItem(name);
+      addListItem(name); 
+    }
+    else return null;
   })
 }
 
